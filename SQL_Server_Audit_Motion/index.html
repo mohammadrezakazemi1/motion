@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SQL Server Audit — Motion Graphic 23.35s</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap');
+:root{--cyan:#55dfff;--blue:#1679ff;--violet:#a56bff;--red:#ff594f;--bg:#030914}
+*{box-sizing:border-box}body{margin:0;background:#01040a;color:#fff;font-family:Vazirmatn,Tahoma,sans-serif;display:grid;place-items:center;min-height:100vh}
+.stage{width:min(100vw,177.78vh);aspect-ratio:16/9;position:relative;overflow:hidden;background:radial-gradient(ellipse at 70% 45%,#102c4c 0,#061326 42%,#020711 78%);isolation:isolate}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#42aaff0c 1px,transparent 1px),linear-gradient(90deg,#42aaff0c 1px,transparent 1px);background-size:42px 42px;transform:perspective(500px) rotateX(8deg) scale(1.2);mask-image:linear-gradient(transparent,#000 20%,#000 80%,transparent)}
+.glow{position:absolute;width:35%;aspect-ratio:1;border-radius:50%;filter:blur(75px);background:#087cff35;left:5%;top:15%;animation:glow 5s ease-in-out infinite alternate}
+.scene{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transform:scale(.96);animation:scene 23.35s linear infinite}
+.scene:nth-of-type(3){animation-delay:0s}.scene:nth-of-type(4){animation-delay:3.8s}.scene:nth-of-type(5){animation-delay:7.6s}.scene:nth-of-type(6){animation-delay:11.5s}.scene:nth-of-type(7){animation-delay:15.3s}.scene:nth-of-type(8){animation-delay:19.1s}
+@keyframes scene{0%,1%{opacity:0;transform:scale(.96)}3%,14%{opacity:1;transform:scale(1)}17%,100%{opacity:0;transform:scale(1.04)}}
+.panel{width:76%;max-width:1000px;text-align:center;position:relative}
+.kicker{color:var(--cyan);font-size:clamp(10px,1.1vw,18px);letter-spacing:.12em;margin-bottom:1.4em}
+.head{font-size:clamp(26px,4vw,64px);font-weight:800;line-height:1.35;margin:.2em 0;text-shadow:0 0 35px #1a8cff66}
+.sub{font-size:clamp(13px,1.65vw,25px);color:#b9cce2;margin-top:1em}
+.card{background:linear-gradient(145deg,#112b49e8,#061326f2);border:1px solid #43caff70;border-radius:18px;box-shadow:0 20px 70px #0008,0 0 35px #087cff25;padding:clamp(18px,3vw,42px);margin:auto;max-width:740px}
+.icon{font-size:clamp(54px,9vw,130px);filter:drop-shadow(0 0 25px #20aaff8a);animation:float 2.8s ease-in-out infinite}
+.warning{color:#ff695f;text-shadow:0 0 30px #ff3a2d;font-size:clamp(72px,12vw,170px);animation:pulse .8s infinite alternate}
+.code{text-align:left;direction:ltr;background:#020914;border:1px solid #1d6b9e;border-radius:12px;padding:20px;color:#a9d9ff;font:clamp(11px,1.4vw,19px)/1.8 Consolas,monospace;max-width:700px;margin:24px auto}
+.changed{color:#fff;background:#7238df;box-shadow:0 0 22px #8e4dff;padding:2px 8px;border-radius:4px}
+.timeline{display:flex;align-items:center;justify-content:center;gap:0;margin:35px auto;direction:ltr}
+.node{width:clamp(14px,2vw,28px);height:clamp(14px,2vw,28px);border-radius:50%;background:var(--cyan);box-shadow:0 0 24px var(--cyan);animation:node 1.2s infinite alternate}
+.line{height:3px;width:14%;background:linear-gradient(90deg,var(--cyan),var(--violet));}
+.rows{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;direction:ltr}
+.row{padding:12px 5px;border:1px solid #235a85;background:#07182c;border-radius:9px;font:clamp(10px,1.3vw,17px) Consolas;color:#8ee9ff}
+.row:nth-child(2){border-color:var(--violet);color:#d7bdff}
+.server{width:clamp(120px,20vw,280px);margin:0 auto 20px;position:relative;perspective:600px}
+.server .box{height:clamp(35px,5vw,70px);margin:8px 0;border:1px solid #47cfff;background:linear-gradient(110deg,#0b1b31,#174c75,#06101f);border-radius:8px;box-shadow:0 0 24px #008dff55;animation:server 2s ease-in-out infinite alternate}
+.server .box:after{content:'●  ●  ●';display:block;text-align:left;padding:10px;color:#56e5ff;letter-spacing:8px}
+.final{font-size:clamp(23px,3.6vw,54px);font-weight:800;color:#fff;text-shadow:0 0 35px #168cff}
+.final small{display:block;font-size:clamp(12px,1.6vw,23px);font-weight:400;color:var(--cyan);margin-top:16px;direction:ltr}
+.hud{position:absolute;left:3%;right:3%;top:4%;display:flex;justify-content:space-between;color:#76cfff;font:12px Consolas;opacity:.85}
+.bar{position:absolute;bottom:0;left:0;height:4px;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--violet));width:0;animation:progress 23.35s linear infinite}
+.caption{position:absolute;bottom:8%;width:100%;text-align:center;font-size:clamp(14px,2vw,29px);font-weight:600;text-shadow:0 3px 12px #000;z-index:2}
+@keyframes progress{to{width:100%}}@keyframes float{50%{transform:translateY(-12px)}}@keyframes pulse{to{transform:scale(1.08)}}@keyframes node{to{box-shadow:0 0 35px #fff;background:#fff}}@keyframes server{to{transform:translateY(-4px);filter:brightness(1.35)}}@keyframes glow{to{transform:translate(30px,20px);opacity:.7}}
+.controls{position:fixed;bottom:12px;left:12px;display:flex;gap:8px;z-index:5}button{background:#102b47;color:white;border:1px solid #4ecfff;border-radius:8px;padding:9px 13px;cursor:pointer;font:14px Vazirmatn}
+@media(prefers-reduced-motion:reduce){.scene,.bar{animation-play-state:paused}}
+</style></head>
+<body><main class="stage" id="stage"><div class="grid"></div><div class="glow"></div><div class="hud"><span>SQL SERVER / AUDIT</span><span id="clock">00:00 / 00:23.35</span></div>
+<section class="scene"><div class="panel"><div class="icon">☎</div><div class="head">یک تماس غیرمنتظره</div><div class="sub">مالیات این فصل خیلی بیشتر از انتظار است...</div></div><div class="caption">حسابدار خبر بدی دارد</div></section>
+<section class="scene"><div class="panel"><div class="kicker">TAX CALCULATION / QUARTERLY REPORT</div><div class="card"><div class="icon">▤</div><div class="head">مالیات بیشتر از حد انتظار</div><div class="sub">هزینه‌ای که هیچ‌کس دلیلش را نمی‌داند</div><div class="warning" style="font-size:clamp(35px,6vw,80px)">↗ +226%</div></div></div><div class="caption">شرکت باید مبلغ بیشتری پرداخت کند</div></section>
+<section class="scene"><div class="panel"><div class="warning">⚠</div><div class="head">علت هنوز مشخص نیست</div><div class="timeline"><span class="node"></span><span class="line"></span><span class="node"></span><span class="line"></span><span class="node"></span><span class="line"></span><span class="node"></span></div><div class="sub">چند روز بررسی و جست‌وجو...</div></div><div class="caption">چه چیزی محاسبات را خراب کرده؟</div></section>
+<section class="scene"><div class="panel"><div class="kicker">STORED PROCEDURE / CHANGE DETECTED</div><div class="head">سه ماه قبل</div><div class="code">CREATE PROCEDURE CalculateTax<br>AS BEGIN<br>&nbsp; SET @TaxRate = 0.09<br>&nbsp; <span class="changed">SET @TaxRate = 0.12&nbsp; -- changed</span><br>END</div><div class="sub">یک تغییر کوچک؛ اثری بزرگ</div></div><div class="caption">یک SP تغییر کرده بود</div></section>
+<section class="scene"><div class="panel"><div class="head">نسخه قبل / نسخه بعد</div><div class="rows"><div class="row">BEFORE<br>TaxRate = 0.09</div><div class="row">AFTER<br>TaxRate = 0.12</div><div class="row">IMPACT<br>Tax ↑</div></div><div class="icon" style="font-size:clamp(35px,5vw,75px);margin-top:24px">⚙</div><div class="sub">تغییر آرام‌آرام روی تمام محاسبات اثر گذاشت</div></div><div class="caption">اما چه کسی و چرا؟</div></section>
+<section class="scene"><div class="panel"><div class="server"><div class="box"></div><div class="box"></div><div class="box"></div></div><div class="head">SQL Server Audit Log Manager</div><div class="timeline"><span class="node"></span><span class="line"></span><span class="node"></span><span class="line"></span><span class="node"></span></div><div class="final">هر تغییر ثبت می‌شود<small>WHO · WHEN · WHAT · WHY</small></div></div><div class="caption">تاریخچه تغییرات؛ مثل Git</div></section>
+<div class="bar" id="bar"></div></main>
+<div class="controls"><button id="play">پخش از ابتدا</button><button id="pause">توقف / ادامه</button><button id="fullscreen">تمام‌صفحه</button></div>
+<script>
+const stage=document.getElementById('stage'),bar=document.getElementById('bar'),clock=document.getElementById('clock');
+let start=performance.now(),paused=false,pausedAt=0,offset=0;
+function tick(now){if(!paused){let t=((now-start+offset)%23350+23350)%23350;clock.textContent='00:'+String(Math.floor(t/1000)).padStart(2,'0')+' / 00:23.35';}requestAnimationFrame(tick)}requestAnimationFrame(tick);
+document.getElementById('pause').onclick=()=>{paused=!paused;if(paused){pausedAt=performance.now();stage.style.animationPlayState='paused';document.querySelectorAll('.scene,.bar,.icon,.warning,.node,.box').forEach(e=>e.style.animationPlayState='paused')}else{offset+=performance.now()-pausedAt;start=performance.now();stage.style.animationPlayState='running';document.querySelectorAll('.scene,.bar,.icon,.warning,.node,.box').forEach(e=>e.style.animationPlayState='running')}};
+document.getElementById('play').onclick=()=>{offset=0;start=performance.now();paused=false;document.querySelectorAll('.scene,.bar,.icon,.warning,.node,.box').forEach(e=>e.style.animation='none');void stage.offsetWidth;location.reload()};
+document.getElementById('fullscreen').onclick=()=>stage.requestFullscreen?.();
+</script></body></html>
